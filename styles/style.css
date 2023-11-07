@@ -269,6 +269,7 @@ h4 {
 
 @media (width <= 768px) {
   .base__title {
+    margin-block-start: 68px;
     text-shadow: 4px 4px 0 var(--subtitle-bgc, #ff0070);
   }
 
@@ -280,10 +281,6 @@ h4 {
   .header__theme-menu-list {
     flex-direction: column;
     gap: 10px;
-  }
-
-  .base__title {
-    margin-block-start: 68px;
   }
 
   .header__subtitle {
