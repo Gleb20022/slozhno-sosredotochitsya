@@ -28,22 +28,17 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  color: var(--subtitle-bgc, #ff0070);
   inset-inline-end: 29px;
   inset-block-start: 21px;
-}
-
-.rec-element::before {
-  content: "REC";
-  color: var(--title-color, #ff0070);
-  line-height: 24px;
 }
 
 .rec-element::after {
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--title-color, #ff0070);
-  background-color: var(--title-color, #ff0070);
+  box-shadow: 0 0 2px 2px var(--subtitle-bgc, #ff0070);
+  background-color: var(--subtitle-bgc, #ff0070);
   inline-size: 9px;
   block-size: 9px;
 }
@@ -122,25 +117,26 @@
   position: relative;
 }
 
-.decorated-zone::before,
-.decorated-zone::after {
+.decorated-zone::before {
   content: "";
   position: absolute;
   z-index: -1;
-  inline-size: 25px;
-  block-size: 25px;
-}
-
-.decorated-zone::before {
   border-inline-end: 1px solid var(--title-color, #ff0070);
   border-block-start: 1px solid var(--title-color, #ff0070);
+  inline-size: 25px;
+  block-size: 25px;
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .decorated-zone::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
   border-inline-start: 1px solid var(--title-color, #ff0070);
   border-block-end: 1px solid var(--title-color, #ff0070);
+  inline-size: 25px;
+  block-size: 25px;
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
@@ -302,7 +298,7 @@ h4 {
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 400px) {
   .rec-element {
     inset-inline-end: 19px;
     inset-block-start: 11px;
