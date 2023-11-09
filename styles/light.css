@@ -6,7 +6,6 @@
   --accent-color: #ffc2e6;
   --btn-hover-color: #32312d66;
   --page-bgc: var(--subtitle-color, #fff1f7);
-  --text-size: 18px;
   --bg-image: url(../images/cover-image-light.png);
   --visibility: hidden;
 }
@@ -20,7 +19,6 @@
     --accent-color: #ffc2e6;
     --btn-hover-color: #32312d66;
     --page-bgc: var(--subtitle-color, #fff1f7);
-    --text-size: 18px;
     --bg-image: url(../images/cover-image-light.png);
     --visibility: hidden;
   }
